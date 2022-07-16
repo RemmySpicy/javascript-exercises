@@ -18,17 +18,17 @@ const removeFromArray = function(arr, ...args) {
 
 
     // Method 3
-    const removeFromArray = function(...args) {
+    // const removeFromArray = function(...args) {
         // the very first item in our list of arguments is the array, we pull it out with args[0]
         
-        const array = args[0];
-        const newArray = [];
-        array.forEach((item) => {
-            if (!args.includes(item)) {
-                newArray.push(item);
-            }
-        });
-        return newArray;
+        // const array = args[0];
+        // const newArray = [];
+        // array.forEach((item) => {
+        //     if (!args.includes(item)) {
+        //         newArray.push(item);
+        //     }
+        // });
+        // return newArray;
     }
 };
 
