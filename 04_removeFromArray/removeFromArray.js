@@ -15,6 +15,21 @@ const removeFromArray = function(arr, ...args) {
     //     }
     // }
     // return localArr;
+
+
+    // Method 3
+    const removeFromArray = function(...args) {
+        // the very first item in our list of arguments is the array, we pull it out with args[0]
+        
+        const array = args[0];
+        const newArray = [];
+        array.forEach((item) => {
+            if (!args.includes(item)) {
+                newArray.push(item);
+            }
+        });
+        return newArray;
+    }
 };
 
 // Do not edit below this line
